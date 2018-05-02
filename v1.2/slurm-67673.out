@@ -1,0 +1,98 @@
+------------------------------------------------------
+SLURM_NNODES: 2
+SLURM_JOB_NODELIST: compute-0-[1-2]
+SLURM_SUBMIT_DIR: /export/home/grp13/monte_carlo
+SLURM_SUBMIT_HOST: centaure
+SLURM_JOB_ID: 67673
+SLURM_JOB_NAME: monte_carlo
+SLURM_JOB_PARTITION: intensive.q
+SLURM_NTASKS: 4
+SLURM_TASKS_PER_NODE: 2(x2)
+SLURM_NTASKS_PER_NODE: 2
+------------------------------------------------------
+Generating hostname list...
+------------------------------------------------------
+Creating SCRATCH directories on nodes compute-0-[1-2]...
+------------------------------------------------------
+Transferring files from frontend to compute nodes compute-0-[1-2]
+« /export/home/grp13/monte_carlo/monte_carlo » -> « /scratch/grp13-67673/monte_carlo »
+« /export/home/grp13/monte_carlo/data.dat » -> « /scratch/grp13-67673/data.dat »
+« /export/home/grp13/monte_carlo/monte_carlo » -> « /scratch/grp13-67673/monte_carlo »
+« /export/home/grp13/monte_carlo/data.dat » -> « /scratch/grp13-67673/data.dat »
+------------------------------------------------------
+Run -mpi program...
+************************
+Calcul exécuté sur 4 coeurs
+Dimension selon x : 100
+Dimension selon y : 100
+Nombre de lancés par case : 100
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+
+monte_carlo:139376 terminated with signal 6 at PC=7fa30a42b1d7 SP=7fff964a85e8.  Backtrace:
+/usr/lib64/libc.so.6(gsignal+0x37)[0x7fa30a42b1d7]
+/usr/lib64/libc.so.6(abort+0x148)[0x7fa30a42c8c8]
+/usr/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x165)[0x7fa30af4b9d5]
+/usr/lib64/libstdc++.so.6(+0x5e946)[0x7fa30af49946]
+/usr/lib64/libstdc++.so.6(+0x5e973)[0x7fa30af49973]
+/usr/lib64/libstdc++.so.6(+0x5eb93)[0x7fa30af49b93]
+/usr/lib64/libstdc++.so.6(_Znwm+0x7d)[0x7fa30af4a12d]
+/usr/lib64/libstdc++.so.6(_Znam+0x9)[0x7fa30af4a1c9]
+/export/home/grp13/monte_carlo/monte_carlo[0x409265]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7fa30a417b35]
+/export/home/grp13/monte_carlo/monte_carlo[0x408dc9]
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+
+monte_carlo:70645 terminated with signal 6 at PC=7f2e030955f7 SP=7fff95eeddd8.  Backtrace:
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+
+monte_carlo:70647 terminated with signal 6 at PC=7f7dfd88f5f7 SP=7fff382c0218.  Backtrace:
+/usr/lib64/libc.so.6(gsignal+0x37)[0x7f7dfd88f5f7]
+/usr/lib64/libc.so.6(gsignal+0x37)[0x7f2e030955f7]
+/usr/lib64/libc.so.6(abort+0x148)[0x7f2e03096ce8]
+/usr/lib64/libc.so.6(abort+0x148)[0x7f7dfd890ce8]
+/usr/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x165)[0x7f7dfe3af9d5]
+/usr/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x165)[0x7f2e03bb59d5]
+/usr/lib64/libstdc++.so.6(+0x5e946)[0x7f2e03bb3946]
+/usr/lib64/libstdc++.so.6(+0x5e946)[0x7f7dfe3ad946]
+/usr/lib64/libstdc++.so.6(+0x5e973)[0x7f2e03bb3973]
+/usr/lib64/libstdc++.so.6(+0x5eb93)[0x7f2e03bb3b93]
+/usr/lib64/libstdc++.so.6(+0x5e973)[0x7f7dfe3ad973]
+/usr/lib64/libstdc++.so.6(+0x5eb93)[0x7f7dfe3adb93]
+/usr/lib64/libstdc++.so.6(_Znwm+0x7d)[0x7f2e03bb412d]
+/usr/lib64/libstdc++.so.6(_Znwm+0x7d)[0x7f7dfe3ae12d]
+/usr/lib64/libstdc++.so.6(_Znam+0x9)[0x7f7dfe3ae1c9]
+/export/home/grp13/monte_carlo/monte_carlo[0x409265]
+/usr/lib64/libstdc++.so.6(_Znam+0x9)[0x7f2e03bb41c9]
+/export/home/grp13/monte_carlo/monte_carlo[0x409265]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f2e03081b15]
+/export/home/grp13/monte_carlo/monte_carlo[0x408dc9]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f7dfd87bb15]
+/export/home/grp13/monte_carlo/monte_carlo[0x408dc9]
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[36903,1],3]
+  Exit code:    1
+--------------------------------------------------------------------------
+------------------------------------------------------
+Transferring result files from compute nodes to frontend
+« /scratch/grp13-67673/monte_carlo » -> « /export/home/grp13/monte_carlo/grp13-67673/monte_carlo »
+/usr/bin/cp: impossible de créer le fichier standard « /export/home/grp13/monte_carlo/grp13-67673/monte_carlo »: Le fichier existe
+« /scratch/grp13-67673 » -> « /export/home/grp13/monte_carlo/grp13-67673 »
+« /scratch/grp13-67673/monte_carlo » -> « /export/home/grp13/monte_carlo/grp13-67673/monte_carlo »
+« /scratch/grp13-67673/data.dat » -> « /export/home/grp13/monte_carlo/grp13-67673/data.dat »
+« /scratch/grp13-67673/data.dat » -> « /export/home/grp13/monte_carlo/grp13-67673/data.dat »
+« /scratch/grp13-67673/monte_carlo.80s-70647,compute-0-2.btr » -> « /export/home/grp13/monte_carlo/grp13-67673/monte_carlo.80s-70647,compute-0-2.btr »
+« /scratch/grp13-67673/monte_carlo.80s-70645,compute-0-2.btr » -> « /export/home/grp13/monte_carlo/grp13-67673/monte_carlo.80s-70645,compute-0-2.btr »
+srun: error: compute-0-1: task 0: Exited with exit code 1
+srun: error: compute-0-2: task 1: Exited with exit code 1
+/usr/bin/cp: impossible de créer le fichier standard « /export/home/grp13/monte_carlo/grp13-67673/data.dat »: Le fichier existe
+« /scratch/grp13-67673/monte_carlo.80s-139376,compute-0-1.btr » -> « /export/home/grp13/monte_carlo/grp13-67673/monte_carlo.80s-139376,compute-0-1.btr »

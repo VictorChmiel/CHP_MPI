@@ -1,0 +1,42 @@
+------------------------------------------------------
+SLURM_NNODES: 2
+SLURM_JOB_NODELIST: compute-0-[1-2]
+SLURM_SUBMIT_DIR: /export/home/grp13/Hello
+SLURM_SUBMIT_HOST: centaure
+SLURM_JOB_ID: 66402
+SLURM_JOB_NAME: hello
+SLURM_JOB_PARTITION: intensive.q
+SLURM_NTASKS: 8
+SLURM_TASKS_PER_NODE: 4(x2)
+SLURM_NTASKS_PER_NODE: 4
+------------------------------------------------------
+Generating hostname list...
+------------------------------------------------------
+Creating SCRATCH directories on nodes compute-0-[1-2]...
+------------------------------------------------------
+Transferring files from frontend to compute nodes compute-0-[1-2]
+« /export/home/grp13/Hello/Hello » -> « /scratch/grp13-66402/Hello »
+« /export/home/grp13/Hello/Hello » -> « /scratch/grp13-66402/Hello »
+------------------------------------------------------
+Run -mpi program...
+Process 2 : Hello  World
+Process 3 : Hello  World
+Programme s’exécutant  sur 8 coeur(s) 
+Process 0 : Hello  World
+Process 1 : Hello  World
+Process 6 : Hello  World
+Process 7 : Hello  World
+Process 4 : Hello  World
+Process 5 : Hello  World
+------------------------------------------------------
+Transferring result files from compute nodes to frontend
+« /scratch/grp13-66402 » -> « /export/home/grp13/Hello/grp13-66402 »
+« /scratch/grp13-66402/Hello » -> « /export/home/grp13/Hello/grp13-66402/Hello »
+« /scratch/grp13-66402/Hello » -> « /export/home/grp13/Hello/grp13-66402/Hello »
+------------------------------------------------------
+Deleting scratch...
+« /scratch/grp13-66402/Hello » supprimé
+répertoire supprimé : « /scratch/grp13-66402 »
+« /scratch/grp13-66402/Hello » supprimé
+répertoire supprimé : « /scratch/grp13-66402 »
+------------------------------------------------------

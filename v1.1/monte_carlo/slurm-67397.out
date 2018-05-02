@@ -1,0 +1,40 @@
+------------------------------------------------------
+SLURM_NNODES: 1
+SLURM_JOB_NODELIST: compute-0-1
+SLURM_SUBMIT_DIR: /export/home/grp13/monte_carlo
+SLURM_SUBMIT_HOST: centaure
+SLURM_JOB_ID: 67397
+SLURM_JOB_NAME: monte_carlo
+SLURM_JOB_PARTITION: intensive.q
+SLURM_NTASKS: 1
+SLURM_TASKS_PER_NODE: 1
+SLURM_NTASKS_PER_NODE: 1
+------------------------------------------------------
+Generating hostname list...
+------------------------------------------------------
+Creating SCRATCH directories on nodes compute-0-1...
+------------------------------------------------------
+Transferring files from frontend to compute nodes compute-0-1
+« /export/home/grp13/monte_carlo/monte_carlo » -> « /scratch/grp13-67397/monte_carlo »
+« /export/home/grp13/monte_carlo/data.dat » -> « /scratch/grp13-67397/data.dat »
+------------------------------------------------------
+Run -mpi program...
+************************
+Calcul exécuté sur 0 coeurs
+Dimension selon x : 100
+Dimension selon y : 100
+Nombre de lancés par case : 100
+Écriture du fichier vtk
+------------------------------------------------------
+Transferring result files from compute nodes to frontend
+« /scratch/grp13-67397 » -> « /export/home/grp13/monte_carlo/grp13-67397 »
+« /scratch/grp13-67397/monte_carlo » -> « /export/home/grp13/monte_carlo/grp13-67397/monte_carlo »
+« /scratch/grp13-67397/data.dat » -> « /export/home/grp13/monte_carlo/grp13-67397/data.dat »
+« /scratch/grp13-67397/stochastique.vtk » -> « /export/home/grp13/monte_carlo/grp13-67397/stochastique.vtk »
+------------------------------------------------------
+Deleting scratch...
+« /scratch/grp13-67397/monte_carlo » supprimé
+« /scratch/grp13-67397/data.dat » supprimé
+« /scratch/grp13-67397/stochastique.vtk » supprimé
+répertoire supprimé : « /scratch/grp13-67397 »
+------------------------------------------------------

@@ -1,0 +1,204 @@
+    1  la
+    2  ls -a
+    3  man ls
+    4  more Hello/
+    5  ls Hello/
+    6  ls
+    7  cd Hello/
+    8  ls
+    9  gedit Hello_World.cc &
+   10  cd ..
+   11  ls
+   12  cd Hello
+   13  ls
+   14  more Makefile 
+   15  gedit Hello_World.cc &
+   16  module load mpi/openmpi-x86_64
+   17  make
+   18  gedit Hello.job
+   19  gedit Hello.job &
+   20  ll
+   21  ls
+   22  more Makefile 
+   23  ls
+   24  more Hello.cc
+   25  more Hello_World.cc
+   26  mpirun -np 4 -host centaure ./Hello
+   27  mpirun -np nbcoeurs -host centaure ./Hello
+   28  gedit Hello.job
+   29  mpirun -np 4 -host centaure ./Hello
+   30  gedit Hello.job
+   31  more Hello.job
+   32  sbatch --reservation=TB-CHP-1 Hello.job 
+   33  squeue
+   34  ls
+   35  more slurm-66402.out 
+   36  ls grp13-66402
+   37  more grp13-66402/Hello
+   38  ifconfig
+   39  figlet coucou
+   40  dfyghkldg
+   41  hf
+   42  fg
+   43  hg
+   44  hxgf
+   45  ls
+   46  ls Hello
+   47  cd Somme/
+   48  ls
+   49  gedit Somme.job
+   50  cd ..
+   51  cd Hello/
+   52  gedit Hello.job 
+   53  sbatch --reservation=B-CHP-1 Hello.job
+   54  sbatch --reservation=B-CHP-2 Hello.job
+   55  sbatch --reservation=TB-CHP-2 Hello.job
+   56  cd ..
+   57  cd Somme/
+   58  ls
+   59  gedit Principal.cc Somme.* &
+   60  echo coucou
+   61  scontrol show reservation
+   62  cd ..
+   63  ls
+   64  scp -r Hello utilisateur@193.49.173.225:~/Hello
+   65  scp -r monte_carlo utilisateur@193.49.173.225:~/monte_carlo
+   66  scp -r Somme utilisateur@193.49.173.225:~/Somme
+   67  man ssh
+   68  module load mpi/openmpi-x86_64 
+   69  make
+   70  ls
+   71  cd Somme
+   72  make
+   73  ls
+   74  cd ..
+   75  cd Hello/
+   76  ls
+   77  more slurm-67252.out 
+   78  cd .
+   79  cd ..
+   80  cd Somme/
+   81  sbatch --reservation=TB-CHP-1 Somme.job
+   82  sbatch --reservation=TB-CHP-2 Somme.job
+   83  squeu
+   84  squeue
+   85  ls
+   86  more slurm-67320.out 
+   87  make
+   88  sbatch --reservation=TB-CHP-2 Somme.job
+   89  ls
+   90  squeue
+   91  ls
+   92  more slurm-67325.out
+   93  make
+   94  ls
+   95  squeue
+   96  ls
+   97  squeue
+   98  ls
+   99  sbatch --reservation=TB-CHP-2 Somme.job
+  100  squeue
+  101  ls
+  102  squeue
+  103  ls
+  104  more slurm-67349.out
+  105  cd ..
+  106  cd monte_carlo/
+  107  ls
+  108  gedit monte_carlo.* &
+  109  ls
+  110  more data.dat 
+  111  *
+  112  ls
+  113  make
+  114  sbatch --reservation=TBCHP-2 monte_carlo.job
+  115  sbatch --reservation=TB-CHP-2 monte_carlo.job
+  116  squeue
+  117  ls
+  118  more slurm-67397.out 
+  119  ls
+  120  ls grp13-67397/
+  121  module load visit/2.12.1
+  122  visit -o grp13-67397/stochastique.vtk 
+  123  module load visit/2.12.
+  124  make
+  125  ls
+  126  sbatch --reservation=TB-CHP-2 monte_carlo.job
+  127  squeue
+  128  ls
+  129  ls grp13-67407
+  130  visit grp13-67407/stochastique.vtk 
+  131  cd grp13-67407/
+  132  visit stochastique.vtk 
+  133  ls
+  134  visit stochastique.vtk 
+  135  module load visit/2.12.1
+  136  visit stochastique.vtk 
+  137  more stochastique.vtk 
+  138  visit -o stochastique.vtk 
+  139  scp -r monte_carlo utilisateur@193.49.173.225:~/monte_carloscp -r monte_carlo utilisateur@193.49.173.225:~/monte_carlo
+  140  scp -r monte_carlo utilisateur@193.49.173.225:~/monte_carloscp -r monte_carlo utilisateur@193.49.173.225:~/
+  141  scp -r monte_carlo utilisateur@193.49.173.225:~/monte_carloscp -r monte_carlo utilisateur@193.49.173.225:~/Update1.1
+  142  pwd
+  143  cd ..
+  144  scp -r monte_carlo utilisateur@193.49.173.225:~/monte_carloscp -r monte_carlo utilisateur@193.49.173.225:~/Update1.1
+  145  logout
+  146  ls
+  147  cd monte_carlo/
+  148  ls
+  149  gedit monte_carlo.* &
+  150  cd ..
+  151  cd Somme/
+  152  ls
+  153  gedit Somme.cc &
+  154  gedit Principal.cc &
+  155  pwd
+  156  ls
+  157  cd ..
+  158  ls
+  159  cd monte_carlo/
+  160  ls
+  161  make
+  162  ls
+  163  ls ~/Hello
+  164  make
+  165  grep mpi.h
+  166  locate mpi.h
+  167  make
+  168  module load mpi/openmpi-x86_64 
+  169  make
+  170  LS
+  171  gedit Makefile &
+  172  make
+  173  ll
+  174  rm monte_carlo_parallel.0
+  175  rm monte_carlo_parallel.o
+  176  rm monte_carlo_parallel.cc
+  177  make
+  178  sbatch --reservation=TB-CHP-3 monte_carlo.job
+  179  more monte_carlo.job
+  180  squeue
+  181  ls
+  182  module load visit/2.12.1
+  183  visit -o grp13-67673/sto
+  184  ls grp13-67673
+  185  more slurm-67673.out 
+  186  man mpirun
+  187  ll
+  188  mpirun -np 2 -host centaure ./monte_carlo data.dat 
+  189  xterm -e 'mpirun -np 2 -host centaure ./monte_carlo data.dat'
+  190  xterm -e 'mpirun -np 2 -host centaure ./monte_carlo data.dat' hold on 
+  191  xterm -hold -e  'mpirun -np 2 -host centaure ./monte_carlo data.dat'
+  192  mpirun -np 2 -host centaure xterm -hold -e ./monte_carlo data.dat 
+  193  mpirun -np 2 -host centaure ./monte_carlo data.dat 
+  194  mpirun -np 2 -host centaure xterm -hold -e ./monte_carlo data.dat 
+  195  make
+  196  mpirun -np 2 -host centaure xterm -hold -e ./monte_carlo data.dat 
+  197  mpirun -np 2 4host centaure xterm -hold -e ./monte_carlo data.dat 
+  198  mpirun -np 4 host centaure xterm -hold -e ./monte_carlo data.dat 
+  199  mpirun -np 3 host centaure xterm -hold -e ./monte_carlo data.dat 
+  200  mpirun -np 2 host centaure xterm -hold -e ./monte_carlo data.dat 
+  201  top
+  202  mpirun -np 2 host centaure xterm -hold -e ./monte_carlo data.dat 
+  203  history
+  204  history >> hist

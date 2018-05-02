@@ -1,0 +1,13 @@
+
+monte_carlo:70647 terminated with signal 6 at PC=7f7dfd88f5f7 SP=7fff382c0218.  Backtrace:
+/usr/lib64/libc.so.6(gsignal+0x37)[0x7f7dfd88f5f7]
+/usr/lib64/libc.so.6(abort+0x148)[0x7f7dfd890ce8]
+/usr/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x165)[0x7f7dfe3af9d5]
+/usr/lib64/libstdc++.so.6(+0x5e946)[0x7f7dfe3ad946]
+/usr/lib64/libstdc++.so.6(+0x5e973)[0x7f7dfe3ad973]
+/usr/lib64/libstdc++.so.6(+0x5eb93)[0x7f7dfe3adb93]
+/usr/lib64/libstdc++.so.6(_Znwm+0x7d)[0x7f7dfe3ae12d]
+/usr/lib64/libstdc++.so.6(_Znam+0x9)[0x7f7dfe3ae1c9]
+/export/home/grp13/monte_carlo/monte_carlo[0x409265]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f7dfd87bb15]
+/export/home/grp13/monte_carlo/monte_carlo[0x408dc9]
